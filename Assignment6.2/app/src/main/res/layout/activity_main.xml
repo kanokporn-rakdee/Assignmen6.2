@@ -1,0 +1,385 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#8CDFD7"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/GPA"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="104dp"
+        android:layout_marginTop="48dp"
+        android:layout_marginEnd="105dp"
+        android:layout_marginBottom="50dp"
+        android:text="GPA CALCULATOR"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/textViewSu"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.52"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewN"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="39dp"
+        android:layout_marginBottom="578dp"
+        android:text="No"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/TextView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="42dp"
+        android:layout_marginTop="33dp"
+        android:layout_marginBottom="33dp"
+        android:text="1"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/TextView2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewN" />
+
+    <TextView
+        android:id="@+id/TextView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="42dp"
+        android:layout_marginBottom="464dp"
+        android:text="2"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/TextView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="42dp"
+        android:layout_marginTop="33dp"
+        android:text="3"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/TextView2" />
+
+    <TextView
+        android:id="@+id/TextView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="42dp"
+        android:layout_marginTop="33dp"
+        android:text="4"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/TextView3" />
+
+    <TextView
+        android:id="@+id/TextView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="42dp"
+        android:layout_marginTop="33dp"
+        android:text="5"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/TextView4" />
+
+    <TextView
+        android:id="@+id/textViewSu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="64dp"
+        android:layout_marginBottom="578dp"
+        android:text="Subject"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textViewN" />
+
+    <TextView
+        android:id="@+id/textViewTo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="56dp"
+        android:layout_marginBottom="224dp"
+        android:text="Total credits"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textViewN" />
+
+    <TextView
+        android:id="@+id/textViewGPA"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="56dp"
+        android:layout_marginBottom="176dp"
+        android:text="GPA"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textViewN" />
+
+    <TextView
+        android:id="@+id/textViewC"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="77dp"
+        android:layout_marginBottom="578dp"
+        android:text="Credit"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textViewSu" />
+
+    <TextView
+        android:id="@+id/textViewG"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="29dp"
+        android:layout_marginBottom="578dp"
+        android:text="Grade"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textViewC" />
+
+    <EditText
+        android:id="@+id/subject1"
+        android:layout_width="143dp"
+        android:layout_height="49dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="19dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:textAlignment="center"
+        app:layout_constraintStart_toEndOf="@+id/TextView1"
+        app:layout_constraintTop_toBottomOf="@+id/textViewSu" />
+
+    <EditText
+        android:id="@+id/subject2"
+        android:layout_width="143dp"
+        android:layout_height="49dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="76dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:textAlignment="center"
+        app:layout_constraintStart_toEndOf="@+id/TextView1"
+        app:layout_constraintTop_toBottomOf="@+id/textViewSu" />
+
+    <EditText
+        android:id="@+id/subject3"
+        android:layout_width="143dp"
+        android:layout_height="49dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="136dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:textAlignment="center"
+        app:layout_constraintStart_toEndOf="@+id/TextView1"
+        app:layout_constraintTop_toBottomOf="@+id/textViewSu" />
+
+    <EditText
+        android:id="@+id/subject4"
+        android:layout_width="143dp"
+        android:layout_height="49dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="196dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:textAlignment="center"
+        app:layout_constraintStart_toEndOf="@+id/TextView1"
+        app:layout_constraintTop_toBottomOf="@+id/textViewSu" />
+
+    <EditText
+        android:id="@+id/subject5"
+        android:layout_width="143dp"
+        android:layout_height="49dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="252dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:textAlignment="center"
+        app:layout_constraintStart_toEndOf="@+id/TextView1"
+        app:layout_constraintTop_toBottomOf="@+id/textViewSu" />
+
+    <EditText
+        android:id="@+id/credit1"
+        android:layout_width="36dp"
+        android:layout_height="43dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="19dp"
+        android:ems="10"
+        android:inputType="number"
+        android:textAlignment="center"
+        app:layout_constraintStart_toEndOf="@+id/subject1"
+        app:layout_constraintTop_toBottomOf="@+id/textViewC" />
+
+    <EditText
+        android:id="@+id/grade1"
+        android:layout_width="53dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="19dp"
+        android:ems="10"
+        android:inputType="number|numberDecimal"
+        android:textAlignment="center"
+        app:layout_constraintStart_toEndOf="@+id/credit1"
+        app:layout_constraintTop_toBottomOf="@+id/textViewC" />
+
+    <EditText
+        android:id="@+id/grade2"
+        android:layout_width="53dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="80dp"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:textAlignment="center"
+        app:layout_constraintStart_toEndOf="@+id/credit1"
+        app:layout_constraintTop_toBottomOf="@+id/textViewC" />
+
+    <EditText
+        android:id="@+id/grade3"
+        android:layout_width="53dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="140dp"
+        android:ems="10"
+        android:inputType="number|numberDecimal"
+        android:textAlignment="center"
+        app:layout_constraintStart_toEndOf="@+id/credit1"
+        app:layout_constraintTop_toBottomOf="@+id/textViewC" />
+
+    <EditText
+        android:id="@+id/grade4"
+        android:layout_width="53dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="200dp"
+        android:ems="10"
+        android:textAlignment="center"
+        app:layout_constraintStart_toEndOf="@+id/credit1"
+        app:layout_constraintTop_toBottomOf="@+id/textViewC" />
+
+    <EditText
+        android:id="@+id/grade5"
+        android:layout_width="53dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="252dp"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:textAlignment="center"
+        app:layout_constraintStart_toEndOf="@+id/credit1"
+        app:layout_constraintTop_toBottomOf="@+id/textViewC" />
+
+    <EditText
+        android:id="@+id/scg"
+        android:layout_width="53dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="115dp"
+        android:layout_marginTop="368dp"
+        android:ems="10"
+        android:inputType="number"
+        android:textAlignment="center"
+        app:layout_constraintStart_toEndOf="@+id/textViewGPA"
+        app:layout_constraintTop_toBottomOf="@+id/textViewC" />
+
+    <EditText
+        android:id="@+id/credit"
+        android:layout_width="53dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="49dp"
+        android:layout_marginTop="316dp"
+        android:ems="10"
+        android:inputType="number"
+        android:textAlignment="center"
+        app:layout_constraintStart_toEndOf="@+id/textViewTo"
+        app:layout_constraintTop_toBottomOf="@+id/textViewC" />
+
+    <EditText
+        android:id="@+id/credit2"
+        android:layout_width="36dp"
+        android:layout_height="43dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="80dp"
+        android:ems="10"
+        android:inputType="number"
+        android:textAlignment="center"
+        app:layout_constraintStart_toEndOf="@+id/subject1"
+        app:layout_constraintTop_toBottomOf="@+id/textViewC" />
+
+    <EditText
+        android:id="@+id/credit3"
+        android:layout_width="36dp"
+        android:layout_height="43dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="140dp"
+        android:ems="10"
+        android:inputType="number"
+        android:textAlignment="center"
+        app:layout_constraintStart_toEndOf="@+id/subject1"
+        app:layout_constraintTop_toBottomOf="@+id/textViewC" />
+
+    <EditText
+        android:id="@+id/credit4"
+        android:layout_width="36dp"
+        android:layout_height="43dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="200dp"
+        android:ems="10"
+        android:inputType="number"
+        android:textAlignment="center"
+        app:layout_constraintStart_toEndOf="@+id/subject1"
+        app:layout_constraintTop_toBottomOf="@+id/textViewC" />
+
+    <EditText
+        android:id="@+id/credit5"
+        android:layout_width="36dp"
+        android:layout_height="43dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="252dp"
+        android:ems="10"
+        android:inputType="number"
+        android:textAlignment="center"
+        app:layout_constraintStart_toEndOf="@+id/subject1"
+        app:layout_constraintTop_toBottomOf="@+id/textViewC" />
+
+    <Button
+        android:id="@+id/CL"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="248dp"
+        android:layout_marginBottom="83dp"
+        android:text="CLEAR"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/bcalOK"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="62dp"
+        android:layout_marginBottom="83dp"
+        android:text="OK"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
